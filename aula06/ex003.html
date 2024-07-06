@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro Script</title>
+    <style>
+        body {
+            background-color: rgb(71, 71, 203);
+            color: white;
+            font: normal 25px arial;
+        }
+
+        h1 {
+            color: rgb(160, 86, 230);
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello World!</h1> 
+    <p>
+        Já me livrei da maldição!
+    </p>  
+    <script>
+        var num01 = window.prompt("Digite o primeiro valor: "); // string
+        var num02 = window.prompt("Digite o segundo valor: "); // string
+
+        var num1 = parseInt(num01);
+        var num2 = parseInt(num02)
+
+        var resultado = num1 + num2;
+
+        alert(`A soma entre ${num1} + ${num2} é igual a ${resultado}`);
+
+        // string + string = concatenação
+        // number + number = adição
+    </script>
+</body>
+</html>
