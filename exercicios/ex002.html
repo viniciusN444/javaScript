@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando 2 - Exercicio</title>
+    <style>
+        body {
+            background-color: violet;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1em;
+            text-align: center;
+        }   
+    </style>
+</head>
+<body>
+    <h1>Conversor de Moeda</h1>
+    <p>Desenvolva um programa que peça ao usuário para digitar um valor em reais (BRL) e converta esse valor para dólares americanos (USD). Utilize uma taxa de câmbio fixa e exiba o resultado formatado como moeda.</p>
+
+    <script>
+        var real = prompt("Digite o valor a ser convertido: R$")
+        var Real = parseFloat(real);
+
+        var dolares = Real / 5.47;
+
+        alert(`Voce tem ${Real.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}
+        E este valor convertido para dolar fica exatamente: ${dolares.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})}`);
+    </script>
+</body>
+</html>

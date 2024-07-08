@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando 1 - Exercicio</title>
+    <style>
+        body {
+            background-color: violet;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1em;
+            text-align: center;
+        }   
+    </style>
+</head>
+<body>
+    <h1>Calculadora de Área de um Retângulo</h1>
+    <p>Crie um script que solicite ao usuário a largura e a altura de um retângulo e calcule sua área. Exiba o resultado formatado com duas casas decimais.</p>
+
+    <script>
+        var largura = window.prompt("Informe a largura do Retângulo: ");
+        var altura = window.prompt("Informe a altura do Retângulo: ");
+
+        // Converte os valores recebidos em números
+        var valorLargura = parseFloat(largura);
+        var valorAltura = parseFloat(altura);
+
+        // Calcula a área do retângulo
+        var area  = valorLargura * valorAltura;
+
+        //Verifica se o usuario digitou apenas números
+        if(isNaN(valorLargura) || isNaN(valorAltura)) {
+             alert("Porfavor, degite apenas numeros");
+        }else {
+            //Exibe o resultado formatado
+            alert(`Tendo como base a largura de ${valorLargura} e a altura de ${valorAltura} a área do retângulo é ${area.toFixed(2).replace('.', ',')}`);
+        }
+    </script>
+</body>
+</html>
