@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simples</title>
+</head>
+<body>
+    <h1>Bem bem-vindo a calculadora do Vinícius</h1>
+    <h2>Caso não esteja vendo a calculadora, recarregue a página!</h2>
+    <script>
+        window.alert("Seja bem-vindo a calculadora do Vinícius");
+
+        var n1 = window.prompt("Informe o primeiro valor: ");
+        var num01 = parseFloat(n1);
+
+        var n2 = window.prompt("Informe o segundo valor: ");
+        var num02 = parseFloat(n2)
+
+        if(isNaN(num01) || isNaN(num02)){
+            window.alert("Porfavor, insira apenas numeros para dar continuidade a calculadora. \n REINICIE A CALCULADORA!!!")
+        }else{
+            window.alert("Considere os seguintes operadores para responder a proxima caixa: \n+ Adição \n- Subtração \nX Multiplicação \n/ Divisão")
+            var op = window.prompt("Informe o operador: ");
+
+            var total = 0;
+
+            switch (op) {
+                case "+": 
+                    total = num01 + num02;
+                    window.alert(`O resultado desta soma é ${total}`);
+                    break;
+
+                case "-":
+                    total = num01 - num02;
+                    window.alert(`O resultado desta subtração é ${total}`);
+                    break;
+
+                case "X":
+                    total = num01 * num02;
+                    window.alert(`O resultado desta multiplicação é ${total}`);
+                    break;
+
+               case "/":   
+                    if(num02 !== 0){
+                        total = num01 / num02;
+                        window.alert(`O resultado desta divisão é ${total}`) 
+                    }else{
+                        window.alert("Não é possivel dividir por zero! REINICIE A CALCULADORA")
+                   }    
+                        break;
+                   default:
+                        window.alert("Operador inválido. Por favor, reinicie a calculadora e escolha um operador válido.");
+                        break;
+            }
+        }
+    </script>    
+</body>
+</html>
