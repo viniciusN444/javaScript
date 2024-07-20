@@ -12,14 +12,21 @@
         window.alert("Seja bem-vindo a calculadora do Vinícius");
 
         var n1 = window.prompt("Informe o primeiro valor: ");
+
+        // faz a coversão do (n1) para Float
         var num01 = parseFloat(n1);
 
         var n2 = window.prompt("Informe o segundo valor: ");
+
+        // faz a coversão do (n1) para Float
         var num02 = parseFloat(n2)
 
+        /* verifica se o que o usuario digitou é apenas numeros*/
         if(isNaN(num01) || isNaN(num02)){
+            //se por acaso o usuario digitar alguma coisa diferentes de numeros irá aparecer a mensagem abaixo
             window.alert("Porfavor, insira apenas numeros para dar continuidade a calculadora. \n REINICIE A CALCULADORA!!!")
         }else{
+            //se o usuario digitou tudo certinho, que no caso aqui seria só numeros, a calculadora vai dar continuidade!
             window.alert("Considere os seguintes operadores para responder a proxima caixa: \n+ Adição \n- Subtração \nX Multiplicação \n/ Divisão")
             var op = window.prompt("Informe o operador: ");
 
@@ -41,15 +48,18 @@
                     window.alert(`O resultado desta multiplicação é ${total}`);
                     break;
 
-               case "/":   
+               case "/":  
+                    //se o numero que será dividido for diferente de zero ira dar continuidade a calculadora! 
                     if(num02 !== 0){
                         total = num01 / num02;
                         window.alert(`O resultado desta divisão é ${total}`) 
                     }else{
+                        // senão ira aparecer a mensagem a baixo!
                         window.alert("Não é possivel dividir por zero! REINICIE A CALCULADORA")
                    }    
                         break;
                    default:
+                        //caso ele digitar qualquer coisa diferente de "+" "-"  "X"  "/" ira dar erro!
                         window.alert("Operador inválido. Por favor, reinicie a calculadora e escolha um operador válido.");
                         break;
             }
