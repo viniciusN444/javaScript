@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora do Dia</title>
+    <style>
+        body{
+            box-sizing: border-box;
+            background-color: rgb(65, 65, 213);
+        }
+
+        main{
+            background-color: white;
+            border-radius: 10px;   
+            display: block;
+            margin: auto;
+            width: 500px;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #msg{
+            padding: 10px;
+        }
+        
+    </style>
+</head>
+<body onload="Carregar()">
+    <!--1° exercicio: fazer uma tela, onde de acordo com o horario do computador, mudar a imagem de fundo "exemplo: se for no periodo da tarde vai aparecer uma imagem que representa a tarde, e logo acima da imagem aparecer o horario"-->
+    <main>
+        <h1>Hora do Dia</h1>
+        <div id="comprimentar">
+
+        </div>
+        <div id="msg">
+
+        </div>
+        <div id="foto">
+            <img id="imagem" src="../imgs_exercicios/img_manha (1).png" alt="imagem de fundo 'Manhã'">
+        </div>
+    </main>
+    
+    <script src="../exe005/exe005.js"></script>
+</body>
+</html>
