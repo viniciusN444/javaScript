@@ -1,23 +1,26 @@
-function contar() {
-    var inicio = parseInt(window.document.querySelector("#inicio").value);
-    var fim = parseInt(window.document.querySelector("#ifim").value);
-    var passo = parseInt(window.document.querySelector("#ipasso").value);
-    var resultado = window.document.querySelector("#resultado");
+function contar(){
+    //Reuperação de dados do html
+    var inicio = parseInt(document.querySelector("#inicio").value);
+    var fim = parseInt(document.querySelector("#ifim").value);
+    var passo = parseInt(document.querySelector("#ipasso").value)
+    var resultado =  document.querySelector("#resultado");
     var contador;
-    
-    // Verifica se os valores são números válidos
-    if (isNaN(inicio) || isNaN(fim) || isNaN(passo)) {
-        alert("Por favor, insira todos os valores.");
-        return;   
-    }
+
+    /*
+        Verifica se o número digitado é um número ou não.
+        Se os valores digitados forem realmente números, o resultado será true, pois o isNaN() verifica se o valor não é um número.
+        Se os valores digitados não forem números, retornará false, pois, o valor digitado é número. 
+    */
+    if(isNaN(inicio) || isNaN(fim) || isNaN(passo)){
+        alert("Porfavor, insira apenas números validos!");
+        return;
+    } 
 
     // Limpa resultados anteriores
     resultado.innerHTML = "Contagem: ";
 
-    // Verifica se o passo é válido
-    if (passo <= 0) {
-        alert("O passo deve ser um número positivo.");
-        return;
+    if(passo <= 0){
+        alert("Considere o passo partindo de 1.")
     }
 
     // Contagem crescente
@@ -33,4 +36,5 @@ function contar() {
     } else {
         alert("O valor de início e fim não pode ser o mesmo.");
     }
+
 }
