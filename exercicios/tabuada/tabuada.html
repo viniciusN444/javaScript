@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <style>
+        body{
+            background-color: blueviolet;
+            color: white;
+            text-align: center;
+        }
+
+        section{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: column nowrap;
+            background-color: white;
+            color: black;
+            width: 50%;
+            margin: auto;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        select{
+            width: 80%;
+            height: auto;
+        }
+
+        #btnGerarTabuada{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>  
+    <h1>Tabuada</h1>
+    <section>
+        <p>Número:  <input type="number" id="txtNumTabuada" minlength="0"> <input type="submit" value="Gerar Tabuada" id="btnGerarTabuada" onclick="tabuada()"></p>
+        <select id="containerTabuada">
+            
+        </select>
+    </section>
+
+    <script src="tabuada.js"></script>
+</body>
+</html>
