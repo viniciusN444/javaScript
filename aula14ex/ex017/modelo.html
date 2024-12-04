@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Tabuada</title>
 </head>
 <body>
     <header>
-        <h1>Titulo</h1>
+        <h1>Tabuada</h1>
     </header>
     <section>
         <div>
-
+            <label for="numeroTabuada">Número:</label>
+            <input type="number" name="numero" id="numeroTabuada">
+            <input type="button" name="btn" id="btnGerarTabuada" value="Gerar Tabuada" onclick="tabuada()">
         </div>
         <div>
-
+            <select name="tabuada" id="seltab" size="10">
+                <option style="margin: 5px; color: blue; font-weight: bold;">Digite um número acima</option>
+            </select>
         </div>
     </section> 
     <footer>
