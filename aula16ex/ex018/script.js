@@ -37,8 +37,8 @@ function adicionar(){
         valores.push(Number(num.value));
         /* 
         Apos adicionar no vetor, criamos um option pois ele ira aparecer dentro do select.
-            apos criarmos o option com o nome item, pegamos o valor do option araves da propiedade text e adiciona na lista.
-            o ista.appendChild(item) e para criar o elemento dentro da lista que esta responsavel pelo select.
+            apos criarmos o option com o nome item, pegamos o valor do option atraves da propiedade text e adiciona na lista.
+            o lista.appendChild(item) e para criar o elemento dentro da lista que esta responsavel pelo select.
         */
         let item = document.createElement('option')
         item.text = `Número ${num.value} adicionado`
@@ -54,7 +54,7 @@ function adicionar(){
 }
 
 function finalizar(){
-    /* Se for clicado nem nenhum valor na lista retornará um alert de erro */
+    /* Se o vetor estiver vazio retorne um alert de err. */
 
     if(valores.length == 0){
         alert('Insira valores numericos entre 1 a 100 antes de finalizar!')
@@ -75,7 +75,7 @@ function finalizar(){
             media += soma / tot
 
 
-            /* valores do vetor for o maior numero guardara dentro da varialvel maior caso for o menor numero guardara da varialvel menor. (aqui o que esta dando o direcionamento e os sinais < e >) */
+            /* valores do vetor for o maior numero guardara dentro da varialvel maior caso for o menor numero guardara na varialvel menor. (aqui o que esta dando o direcionamento e os sinais < e >) */
             if(valores[pos] > maior){
                 maior = valores[pos]
             }else if(valores[pos] < menor){

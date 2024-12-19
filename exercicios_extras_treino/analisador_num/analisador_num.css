@@ -1,0 +1,40 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: blue;
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+.container{
+    background-color: white;
+    border-radius: 10px;
+    width: 80%;
+    margin: auto;
+    padding: 15px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+select{
+    display: block;
+    margin: 10px 0px;
+    width: 30%;
+}
+
+#btnFinalizar{
+    display: block;
+    text-align: left;
+}
+
+
+
+
+
