@@ -1,0 +1,59 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+section {
+    background-color: blueviolet;
+    width: 100vw;
+    height: 100vh;
+}
+
+.entradaDeDados{
+    background-color: white;
+    width: 65%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+input#txtNumeroDigitado{
+    outline: none;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#btnAdicionar, #btnFinalizar{
+    border-radius: 10px;
+    background-color: blueviolet;
+    border-color: blueviolet;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    width: 150px;
+}
+
+#btnAdicionar:hover{
+    background-color: rgba(137, 43, 226, 0.831);
+    color: black;
+}
+
+#btnFinalizar:hover{
+    background-color: rgba(137, 43, 226, 0.831);
+    color: black;
+}
+
+#listaDeNumeros{
+    width: 150px;
+    padding: 5px;
+    margin: 5px;
+}

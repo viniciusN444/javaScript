@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="analisador.css">
+    <title>Analisador de Números</title>
+</head>
+
+<body>
+        <section class="container">
+            <div class="entradaDeDados" id="lista">
+                <h1>Analisador De Números</h1>
+                <label for="txtNumeroDigitado">Digite um numero entre 1 até 100: </label>
+                <input type="number" id="txtNumeroDigitado">
+                <button id="btnAdicionar" onclick="adicionar()">Adicionar</button>
+                <select id="listaDeNumeros" size="8"></select>
+                <button id="btnFinalizar" onclick="finalizar()">Finalizar</button>
+                <div id="resultado">
+    
+                </div>
+            </div>
+        </section>
+        <script src="analisador.js"></script>
+</body>
+
+</html>
