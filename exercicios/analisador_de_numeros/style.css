@@ -41,6 +41,11 @@ button{
     margin: 10px;
 }
 
+#numerosAdicionados{
+    width: 60%;
+    margin-bottom: 10px;
+}
+
 footer {
     color: white;
     text-align: center;
